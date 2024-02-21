@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Webpage Addition One</title>
+	<link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+	<div class="main">
+		<div class="navbar">
+			<div class="icon">
+				<h2 class="logo">GuessMyGames</h2>
+		</div>
+
+		<div class="menu">
+			<ul>
+				<li><a href="./index.html">HOME</a></li>
+				<li><a href="./about.html">ABOUT</a></li>
+				<li><a href="./game.html">GAME</a></li>
+				<li><a href="./features.html">FEATURES</a></li>
+			</ul>
+		</div>
+
+	</div>
+	<div id="wrapper">
+		<h1>Addition Game</h1>
+		<p>Welcome to the Addtion Game!</p>
+		<p>Try and guess a random number between 1 and 10.</p>
+		<p>You have 5 attempts to get the right answer.</p>
+		</br>
+		<form class="form">
+			<label for="guessField" id="guess">Guess A Number</label>
+			<input type="text" id="guessField" class="guessField">
+			<input type="submit" id="subt" value="Submit guess" class="guessSubmit">
+		</form>
+
+		<div class="resultParas">
+			<p>Previous Guesses: <span class="guesses"></span></p>
+			<p>Guesses Remaining: <span class="lastResult">5</span></p>
+			<p class="lowOrHi"></p>
+		</div>
+	</div>
+
+	<script src="Javascript/addition.js"></script>
+</body>
+</html>
