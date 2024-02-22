@@ -14,10 +14,6 @@ let previousGuesses = [];
 let numGuesses = 1;
 let playGame = true;
 
-function sum(message){
-	sum.innerHTML = `${randomNumOne} + ${randomNumTwo}`;
-}
-
 if (playGame){
     subt.addEventListener('click', function(e){
         e.preventDefault();
@@ -25,6 +21,11 @@ if (playGame){
         const guess = parseInt(userInput.value);
         validateGuess(guess);
     });
+}
+
+function DisplaySum(){
+	sum.classList.add('sum');
+	sum.innerHTML = `${randomNumOne} + ${randomNumTwo}`;
 }
 
 function validateGuess(guess){
