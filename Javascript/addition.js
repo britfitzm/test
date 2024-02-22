@@ -2,6 +2,7 @@
 let randomNumOne = parseInt((Math.random()*10)+1);
 let randomNumTwo = parseInt((Math.random()*10)+1);
 let Answer = parseInt(randomNumOne + randomNumTwo);
+const sum = document.querySelector('.sum');
 const submit = document.querySelector('#subt');
 const userInput = document.querySelector('#guessField');
 const guessSlot = document.querySelector('.guesses');
@@ -12,6 +13,10 @@ const p = document.createElement('p');
 let previousGuesses = [];
 let numGuesses = 1;
 let playGame = true;
+
+function sum(message){
+	sum.innerHTML = `<p>'${randomNumOne} + ${randomNumTwo}'</p>`
+}
 
 if (playGame){
     subt.addEventListener('click', function(e){
