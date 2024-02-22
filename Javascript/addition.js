@@ -15,7 +15,7 @@ let numGuesses = 1;
 let playGame = true;
 
 function sum(message){
-	sum.innerHTML = `<p>'${randomNumOne} + ${randomNumTwo}'</p>`
+	sum.innerHTML = `${randomNumOne} + ${randomNumTwo}`;
 }
 
 if (playGame){
