@@ -23,10 +23,7 @@ if (playGame){
     });
 }
 
-function DisplaySum(){
-	sum.classList.add('sum');
-	sum.innerHTML = `${randomNumOne} + ${randomNumTwo}`;
-}
+displayMessage(`${randomNumOne} + ${randomNumTwo}`);
 
 function validateGuess(guess){
     if (isNaN(guess)){
@@ -55,9 +52,9 @@ function checkGuess(guess){
     if (guess === Answer){
         displayMessage(`Well Done! The number is ${Answer}`);
         endGame();
-    } else if (guess < randomNumber) {
+    } else if (guess < Answer) {
         displayMessage(`Too low, try again!`);
-    } else if (guess > randomNumber) {
+    } else if (guess > Answer) {
         displayMessage(`Too high, try again!`);
     }
 }
